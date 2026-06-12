@@ -20,3 +20,20 @@ I've played almost all of my teams baseball games this season and as one of the 
  - Compare small and large sample sizes
  - Plot prior and posterior distributions
  - Computer posterior means and credible intervals
+
+## Current results
+
+### Experiment 1
+
+The first experiment compares players with the same observed batting average (0.600) but different sample sizes.
+
+The Bayesian model distinguishes between small and large samples:
+
+- small samples are strongly shrunk toward the prior
+- large samples are trusted more
+- uncertainty decreases as at-bats increases
+
+This shows why naive batting average can be misleading early in a season or over a small number of at-bats.
+
+![Naive vs Bayesian Estimate](figures/naive_vs_bayesian_estimate.png)
+
