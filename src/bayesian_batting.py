@@ -128,9 +128,6 @@ def batting_summary(hits: int, at_bats: int, prior_alpha: int, prior_beta: int) 
     }
 
 
-print(batting_summary(6, 10, 25, 75))
-
-
 
     
 
