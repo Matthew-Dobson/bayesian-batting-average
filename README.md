@@ -109,7 +109,7 @@ bayesian-batting-average/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/bayesian-batting-average.git
+git clone https://github.com/Matthew-Dobson/bayesian-batting-average.git
 cd bayesian-batting-average
 ```
 
