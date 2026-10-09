@@ -131,7 +131,7 @@ Then restart the kernel and run all cells.
 
 A short write-up explaining the model, assumptions, results, limitations, and future work is available here:
 
-[Bayesian Batting Average Estimation](paper/Bayesian Batting Average Estimation.pdf)
+[Bayesian Batting Average Estimation](paper/Bayesian_Batting_Average Estimation.pdf)
 
 ## Limitations
 
