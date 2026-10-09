@@ -52,7 +52,7 @@ def posterior_parameters(prior_alpha: int, prior_beta: int, hits: int, at_bats: 
 
     #now let's calculate the new posterior parameters for the beta distribution
     posterior_alpha = prior_alpha + hits
-    posterior_beta = prior_beta + at_bats
+    posterior_beta = prior_beta + (at_bats - hits)
 
     return posterior_alpha, posterior_beta
 
@@ -111,7 +111,7 @@ def batting_summary(hits: int, at_bats: int, prior_alpha: int, prior_beta: int) 
     posterior_mean = calculate_posterior_mean(hits, at_bats, prior_alpha, prior_beta)
 
     posterior_alpha, posterior_beta = posterior_parameters(prior_alpha, prior_beta, hits, at_bats)
-    posterior_standard_deviation = calculate_posterior_std(prior_alpha, prior_beta)
+    posterior_standard_deviation = calculate_posterior_std(posterior_alpha, posterior_beta)
 
     lower, upper = calculate_posterior_confidence_interval(hits, at_bats, prior_alpha, prior_beta)
 
